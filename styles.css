@@ -1,31 +1,46 @@
 .body {
-    display: flex;
-    width: 375px;
-    height: 4550px;
-}
-
-.header {
     display: inline-block;
-    flex-direction: right;
+    height: 4550px;
+    width: 375px;
+    @font-face {
+        font-family: Raleway;
+        src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
+        src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
+    }
+}
+.header {
+    display: flex;
 }
 
 .logo_img_Reservia {
     position: absolute;
+    padding-top: 20px;
+    width: 70%;
+    height: 30%;
 }
 
 .S_inscrire {
-    text-align: right;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .hebergements {
-    flex-wrap: wrap;
+    position: absolute;
 }
 
-.Activites {
-    flex-wrap: wrap;
+.activites {
+    position: relative;
+   align-content: space-around;
 }
 
-h1 {
-    display: flex;
-    flex-direction: center;
+.footer {
+    height: 40px;
+    width: 100px;
+    border-style: 1px;
+    @font-face {
+        font-family: Raleway;
+        src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
+        src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
+    }
+    background-color: #F2F2F2 ;
 }
