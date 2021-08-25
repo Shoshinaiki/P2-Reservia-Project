@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Reservia</title>
 </head>
 
     <body class="body">
-        <header class="header">
-            <img class="logo_img_Reservia" src="img/Reservia@3x.png" alt="logo Reservia" height="50" width="50" class="S_inscrire" href="sinscrire.html">S'inscrire</a>
-            <a class="hebergements" href="hébergements.html">Hébergements</a>
-            <a class="activites" href="activites.html">Activités</a>
+        <div class="main-container container">
+            <div class="header-container">
+            <div><a href="#" class="logo"><img src="logo/Reservia@3x.svg" alt="Reservia"></a></div>
+            <nav>
+                <ul>
+                    <li class="nav-hebergement"><a href="#hebergement">Hébergements</a></li>
+                    <li class="nav-activite"><a href="#activites">Activités</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-sinscrire"><a href="#sinscrire"></a></li>
+                </ul>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1> 
             <p>En plein centre ville, ou en pleine nature</p>
+        </div>
+        </div>
         </header>
     <main>
 
@@ -21,7 +31,7 @@
             <form> 
                 <div>
                     <img id="logo_map" src="img/logo-map.png" alt="logo map" height="18" width="18">
-                    <input type="search" id="maRecherche" content="Marseille, France" name="q">
+                    <input type="search" id="maRecherche" search="Marseille, France" name="">
                     <img id="loupe" src="img/logo_loupe.png" alt="logo loupe" height="18" width="18">
                 </div>
                 <h2>Filtres</h2>

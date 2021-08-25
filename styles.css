@@ -1,45 +1,49 @@
-.body {
-    display: inline-block;
-    height: 4550px;
-    width: 375px;
-    @font-face {
-        font-family: Raleway;
-        src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
-        src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
-    }
-}
 .header {
     display: flex;
-}
-.logo_img_Reservia {
-    position: absolute;
-    padding-top: 20px;
-    width: 70%;
-    height: 30%;
+    flex-direction: row;
+    align-content: space-around;
 }
 
-.S_inscrire {
-    flex-wrap: wrap;
-    position: relative;
+.nav {
+    display: flex;
+    align-content: space-around;
+    padding-right: 20px;
+    align-items: center;
 }
 
-.hebergements {
-    position: absolute;
+#nav-sinscrire, #nav-hebergements, #nav-activites {
+    display: flex;
+    align-content: space-around;
+    padding-right: 20px;
+    
 }
 
-.activites {
-    position: relative;
-   align-content: space-around;
+.sinscrire, .hebergements, .activites {
+    display: flex;
+    align-content: space-around;
+    text-decoration: none;
 }
 
 .footer {
-    height: 40px;
-    width: 100px;
-    border-style: 1px;
-    @font-face {
-        font-family: Raleway;
-        src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
-        src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
-    }
-    background-color: #F2F2F2 ;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border: 1px hidden ;
+    text-align: f;
+}
+.ul_footer {
+    padding: 15px;
+    list-style-type: none;
+}
+
+.populaires {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border: 1px hidden;
+}
+
+.le_soleil_du_matin {
+    background-color: white;
+    padding: 5px;
+    border: hidden;
+    border-radius: 4px;
 }
