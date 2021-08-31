@@ -1,49 +1,41 @@
 .header {
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
 }
 
-.nav {
+.nav-logo, .nav-inscription, .nav-hebergements, .activites {
     display: flex;
-    align-content: space-around;
-    padding-right: 20px;
-    align-items: center;
-}
-
-#nav-sinscrire, #nav-hebergements, #nav-activites {
-    display: flex;
-    align-content: space-around;
-    padding-right: 20px;
-    
+    align-content: flex-end;
+    flex-direction: row; 
 }
 
 .sinscrire, .hebergements, .activites {
     display: flex;
-    align-content: space-around;
     text-decoration: none;
 }
 
-.footer {
-    padding: 20px;
-    background-color: #F2F2F2;
-    border: 1px hidden ;
-    text-align: f;
-}
-.ul_footer {
-    padding: 15px;
-    list-style-type: none;
+#title-h1 {
+    display: flex;
+    flex-direction: column; 
+    align-content: flex-end;
 }
 
-.populaires {
-    background-color: #F2F2F2;
-    padding: 20px;
-    border: 1px hidden;
+h1 {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
-.le_soleil_du_matin {
-    background-color: white;
-    padding: 5px;
-    border: hidden;
-    border-radius: 4px;
+.search {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    align-content: flex-end;
+}
+
+.economic, .family, .romantic,.allowed {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
