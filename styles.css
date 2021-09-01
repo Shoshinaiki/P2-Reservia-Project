@@ -81,6 +81,21 @@ a {
     display: flex;
     align-content: flex-end;
 }
+#result {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.section_hebergements  {
+    flex: 2;
+    border: 1px solid red; 
+}
+
+.section_populaires {
+    flex: 1;
+    border: 1px solid red;
+}
 
 .economic, .family, .romantic,.allowed {
     display: flex;
