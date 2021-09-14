@@ -13,6 +13,7 @@ header {
 #main_nav {
     display: grid;
     grid-template-columns: 60% auto auto auto;
+    margin-top: 40px;
 }
 
 a {
@@ -21,6 +22,8 @@ a {
 
 .nav_logo {
     order: 1;
+    margin-left: 200px;
+    
 }
 
 .nav_link {
@@ -29,25 +32,44 @@ a {
 
 .sinscrire {
     order: 3;
+    margin-right: 200px;
+    color: #0065FC;
 }
 
-a:hover {
+a:hover {   
     text-decoration-color: #0065FC;
 } 
 
 
 /* Main */
 
-/* #container */
+#container {
+    margin: 200px;
+}
 
 /* Recherches */
 
 /* #search */
 
+#map {
+    color: #0065FC;
+}
+
+#rechercher {
+    height: 20px;
+    border: 20px 20px 20px solid #F2F2F2;
+    border-radius: 10px;
+}
+
+#loupe {
+    color: #0065FC;
+}
+
 #title_h1 {
     display: flex;
     flex-direction: column; 
     align-content: flex-end; 
+    margin-top: -180px;
 }
 
 h1 {
@@ -94,6 +116,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    border: 10px 10px 10px solid #F2F2F2;
+    border-color: white;
 } 
 
 .filter_button {
@@ -106,7 +130,33 @@ h2 {
     align-content: flex-end;
 }
 
-/* .tagline */ 
+#money {
+    color: #0065FC;
+}
+
+#child {
+    color: #0065FC;
+}
+
+#heart {
+    color: #0065FC;
+}
+
+#dog {
+    color: #0065FC;
+}
+
+#info {
+    color: #0065FC;
+    padding-top: 20px;
+}
+
+.tagline {
+    margin-left: 30px;
+    padding-bottom: 50px;
+}
+
+
 
 #result {
     display: flex;
@@ -121,33 +171,54 @@ h2 {
     border: 1px hidden;
     border-radius: 20px; 
     background: #F2F2F2;
+    height: 800px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 1.2em;
 }
 
 .hebergements_bloc {
-   padding: 10px; 
+    margin: 10px; 
+    padding: 5px;
 }
 
 .hebergements_img {
     display: inline-block;
-    margin: 20px 20px 20px 20px;
-    padding: 20px 20px 20px 20px;
+    margin: 15px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
     border: 1px hidden white;
     border-radius: 20px;
-    background:  white; 
+    background:  white;
+    width: 25%;
+    height: 220px; 
+    box-shadow: 0 0 1em gray;
 }
 
-p {
-    padding-bottom: 10px;
-}
-
-.auberge_la_cannebiere {
+.img_hebergements { 
     width: 100%;
-    height: 80px;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
-
 }
-
-/* .afficher_plus */
+.p_hebergements {
+    padding-top: -10px;
+    margin-left: 10px;
+}
+ 
+.night_hebergements { 
+    margin-top: -10px;
+    margin-left: 10px;
+}
+ 
+.afficher_plus {
+    display: flex;
+    align-items: flex-end;
+}  
 
 /* populaires */
 
@@ -155,19 +226,69 @@ p {
     flex: 1;
     border: 1px hidden;
     border-radius: 20px; 
-    background: #F2F2F2
+    background: #F2F2F2;
+    height: 800px; 
+}
+h2 {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+#chart {
+    display: flex;
+    flex-direction: row;
 }
 
 /* .populaires_block */ 
 
 .populaires_img {
     display: inline-block;
+    width: 80%;
+    height: 160px;
     margin: 20px 20px 20px 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
     border: 1px hidden white;
     border-radius: 20px;
     background:  white;
 } 
+
+.img_populaires {
+    width: 40%;
+    height: 150px;
+    padding: 4px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.p_populaires {
+    display: inline-block;
+    flex-direction: row;
+    padding-top: -10px;
+    margin-left: 10px;
+}
+ 
+.night_populaires {
+    display: inline-block;
+    flex-direction: row;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.blue_star, .grey_star {
+    display: inline-block;
+    flex-direction: row;
+    padding: 0.1em;
+    margin-left: 10px;
+}
+
+.blue_star {
+    color: #0065FC;
+}
+
+.grey_star {
+    color: #F2F2F2;
+}
 
 /*Activités*/
 
@@ -175,17 +296,55 @@ p {
 
 /* .activites_block */
 
-/* .activites_img */
+/* activites_img */
+   
+.activites_img_vieux_port {
+    border: 20px;
+    border-radius: 20px;
+    height: 200px;
+    width: 20%;
+}
+
+.activites_img_fort_de_pomegues {
+    height: 200px;
+    width: 20%;
+}
 
 /*footer*/
 
 .footer {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #F2F2F2;
-    border: 1px hidden ;
-    text-align:start;
+    border: 1px hidden; 
+}  
+
+#a_propos {
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
 }
-.ul_footer {
-    padding: 15px;
-    list-style-type: none; 
+
+#nos_hebergements {
+    display: flex;
+    flex-direction: column;
+}
+#assistance {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2_footer {
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+}
+
+.p_footer {
+    margin-left: 20px;
+    padding-right: 200px;
 }
