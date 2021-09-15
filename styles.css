@@ -26,12 +26,27 @@ a {
     
 }
 
-.nav_link {
+.nav_link_1 {
     order: 2;
+    color: #0065FC; 
+    padding-bottom: 30px;   
+}
+
+#trait { 
+    border-top: 3px solid #0065FC;
+    margin-top: 20px;
+    margin-left: 880px;
+    margin-right: 470px;
+
+}
+
+.nav_link_2 {
+    order: 3;
+    color:  gray;
 }
 
 .sinscrire {
-    order: 3;
+    order: 4;
     margin-right: 200px;
     color: #0065FC;
 }
@@ -59,6 +74,7 @@ a:hover {
     height: 20px;
     border: 20px 20px 20px solid #F2F2F2;
     border-radius: 10px;
+    padding: 15px;
 }
 
 #loupe {
@@ -112,23 +128,22 @@ h2 {
     border-radius: 5px;
 }
 
-.economic, .family, .romantic,.allowed {
+.eco, .family, .romantic,.allowed {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding: 15px;
     border: 10px 10px 10px solid #F2F2F2;
-    border-color: white;
-} 
-
-.filter_button {
-    padding: 10px;
-    align-items: center;   
+    border-radius: 20px;
+    color: black;
 } 
 
 .filter_button {
     display: flex;
     align-content: flex-end;
-}
+    color: white;
+    padding: 15px;
+} 
 
 #money {
     color: #0065FC;
@@ -218,6 +233,9 @@ h2 {
 .afficher_plus {
     display: flex;
     align-items: flex-end;
+    padding-left: 50px;
+    padding-top: 100px;
+    align-content: flex-end;
 }  
 
 /* populaires */
@@ -235,15 +253,17 @@ h2 {
     font-size: 1.2em;
 }
 #chart {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: row; 
 }
 
 /* .populaires_block */ 
 
 .populaires_img {
     display: inline-block;
-    width: 80%;
+    width: 90%;
     height: 160px;
     margin: 20px 20px 20px 20px;
     padding: 2px 2px 2px 2px;
@@ -262,9 +282,9 @@ h2 {
 }
 
 .p_populaires {
-    display: inline-block;
+    display: flex;
+    align-items:flex-end;
     flex-direction: row;
-    padding-top: -10px;
     margin-left: 10px;
 }
  

@@ -14,13 +14,14 @@
 
     <body> 
         <header>  
+                <div id="trait"></div>
             <nav id="main_nav">
                 <div class="nav_logo"> 
                     <img class="logo_reservia" src="logo/Reservia.svg" alt="logo Reservia">
                 </div>
-            <a class="nav_link" href="#">Hébergements</a>
-            <a class="nav_link" href="#">Activites</a>
-            <a class="sinscrire" href="#"><strong>sinscrire</strong></a> 
+                <a class="nav_link_1" href="#">Hébergements</a>
+                <a class="nav_link_2" href="#">Activites</a>
+                <a class="sinscrire" href="#"><strong>sinscrire</strong></a> 
             </nav>   
         </header>   
         <main id="container">
@@ -39,19 +40,19 @@
                     <div id="filter_block">
                         <div class="filter_button">
                             <div id="money"><i class="fas fa-money-bill-wave"></i></div>
-                            <button type="submit">Economique</button>
+                            <button class="eco" type="submit"><strong>Economique</strong></button> 
                         </div> 
                         <div class="filter_button"> 
                             <div id="child"><i class="fas fa-child"></i></div>
-                            <button type="submit">Familial</button>
+                            <button class="family" type="submit"><strong>Familial</strong></button>
                         </div> 
                         <div class="filter_button">
                             <div id="heart"><i class="fas fa-heart"></i></div>
-                            <button type="submit">Romantique</button>
+                            <button class="romantic" type="submit"><strong>Romantique</strong></button>
                         </div> 
                         <div class="filter_button">
                             <div id="dog"><i class="fas fa-dog"></i></div>
-                            <button type="submit">Animaux autorisés</button>
+                            <button class="allowed" type="submit"><strong>Animaux autorisés</strong></button>
                         </div> 
                     </div>
                 </div> 
@@ -122,7 +123,7 @@
                             <div class="blue_star"><i class="fas fa-star"></i></div>
                         </div>  
                     </div>
-                        <a class="afficher_plus" href="Afficher_plus.html">Afficher plus</a>
+                        <a class="afficher_plus">Afficher plus</a>
                 </div>   
                 <div class="section_populaires">   
                     <h2>Les plus populaires</h2>
