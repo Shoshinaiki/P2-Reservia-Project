@@ -263,10 +263,10 @@ h2 {
 
 .populaires_block {
     display: flex;
-    flex-direction: column;
 }  
 
 .populaires_img {
+    display: inline-block;
     padding: 2px 2px 2px 2px;
     padding-left: 10px;
     margin: 20px 20px 20px 20px;
@@ -279,6 +279,7 @@ h2 {
 
 .img_populaires {
     display: flex;
+    flex-direction: column;
     width: 40%;
     height: 150px;
     padding: 4px;
@@ -297,13 +298,20 @@ h2 {
 }
  
 .night_populaires {
-    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     margin-left: 10px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
 }
 
 .blue_star, .grey_star {
     display: inline-block;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0.1em;
     margin-left: 10px;
 }
@@ -318,6 +326,27 @@ h2 {
 
 /*Activités*/
 
+.activites_img_height {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 20px;
+    height: 60%;
+    width: 20%;
+}
+
+.vieux_port {
+    display: inline-block;
+    border-radius: 20px;
+    height: 60%;
+    width: 20%;
+}
+
+.activites_img_width {
+    border: 2px solid gray;
+    border-radius: 20px;
+    height: 30%;
+    width: 20%;
+}
 /* .section_activites */
 
 /* .activites_block */
