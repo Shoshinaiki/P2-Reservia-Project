@@ -223,7 +223,8 @@ h2 {
     object-fit: cover;
 }
 .p_hebergements {
-    padding: 2px;
+    padding: 10px;
+    font-weight: 700;
 }
  
 .night_hebergements { 
@@ -241,9 +242,25 @@ h2 {
     font-weight: 700;
 }  
 
+.blue_star, .grey_star {
+    display: inline-block;
+    flex-direction: row;
+    padding-left: 10px;
+
+    z-index: 1;
+}
+.blue_star {
+    color: #0065FC;
+}
+
+.grey_star {
+    color: #F2F2F2;
+} 
+
 /* populaires */
 
 .section_populaires {
+    display: block;
     flex: 1;
     border: 1px hidden;
     padding-left: 20px;
@@ -251,36 +268,35 @@ h2 {
     background: #F2F2F2;
     height: 800px; 
 }
-h2 {
-    width: 70%;
+.h2_populaires {
+    width: 60%;
     padding-top: 10px;
     padding-left: 20px;
     font-size: 1.2em;
 }
 #chart {
     display: inline-block;
+    align-items:flex-end;
+    width: 30%;
 }
 
-.populaires_block {
-    display: flex;
-}  
+/* .populaires_block {
+} */
 
 .populaires_img {
-    display: inline-block;
     padding: 2px 2px 2px 2px;
-    padding-left: 10px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px;
     width: 90%;
     height: 160px; 
     border: 1px hidden white; 
     border-radius: 20px;
     background:  white;
+    box-shadow: 0 0 1em gray;
 } 
 
 .img_populaires {
-    display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     height: 150px;
     padding: 4px;
     border-top-left-radius: 20px;
@@ -288,40 +304,58 @@ h2 {
     object-fit: cover;
 }
 
-.p_populaires {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 70%;
+.p_matin {
+    text-align: center;
+    width: 120%; 
+    font-weight: 700;
+    z-index: 3;
 }
  
-.night_populaires {
-    display: flex;
-    flex-direction: column;
+.night_matin {
+    text-align: center;
+    width: 110%;
     margin-top: 10px;
     margin-left: 10px;
+    z-index: 2;
 }
 
-.stars {
-    display: flex;
-    flex-direction: row;
+.stars_matin {
+    text-align: center;
+    width: 110%;
 }
 
-.blue_star, .grey_star {
-    display: inline-block;
-    flex-direction: row;
-    padding: 0.1em;
-    margin-left: 10px;
+.p_coeur {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 140%;
+    margin-left: 10px; 
+    font-weight: 700;
 }
 
-.blue_star {
-    color: #0065FC;
+.night_coeur {
+    text-align: center;
+    width: 120%;
 }
 
-.grey_star {
-    color: #F2F2F2;
+.stars_coeur {
+    text-align: center;
+    width: 115%;
+}
+
+.p_bleu {
+    text-align: center;
+    width: 130%;
+    font-weight: 700;
+}
+
+.night_bleu {
+    text-align: center;
+    width: 125%;
+}
+
+.stars_bleu {
+    text-align: center;
+    width: 120%;
 }
 
 /*Activités*/
