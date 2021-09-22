@@ -153,17 +153,17 @@ main {
 }
 /* hebergements */ 
 
-.grid_hebergements > .cards {
+.grid_hebergements  {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto;
     grid-gap: 2rem;
 } 
 
 .section_hebergements {
     padding: 2rem;
 }
-.section_hebergements > div, aside > div {
+.section_hebergements > .cards, aside > div { 
     background: #F2F2F2;
     padding: 0.50rem;
 }
