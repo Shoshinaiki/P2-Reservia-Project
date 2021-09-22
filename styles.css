@@ -19,11 +19,10 @@ header {
 
 #trait { 
         border-top: 3px solid #0065FC;
-        margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 880px;
-        margin-right: 470px; 
-}
+        margin-left: 840px;
+        margin-right: 440px; 
+} 
 
 .logo_reservia {
     width: none;
@@ -46,6 +45,7 @@ a {
 }
 
 .nav_link_1 {
+    margin-bottom: 20px;
     order: 2;
     color: #0065FC;   
 }
@@ -67,13 +67,18 @@ a:hover {
 
 /* Recherches */
 
-#rechercher {
-    height: 20px;
-    border: 20px 20px 20px 20px solid #F2F2F2;
-    border-radius: 10px;
-    padding: 15px;
+input[type="search"]  {
+    height: 40px;
+    border: 2px  solid #F2F2F2;
+    border-radius: 5px;
+    padding: 20px;
+    color: #0065FC;
 }
 
+.Rechercher {
+    text-align: center;
+    color: #0065FC;
+}
 #title_h1 {
     display: flex;
     flex-direction: column; 
@@ -101,8 +106,18 @@ h1 {
 } 
 
 h2 {
-    font-size: 0.9em; 
+    font-size: 1.0rem; 
+    padding-bottom: 10px;
     } 
+
+.fa-chart-line {
+    display: flex;
+    align-content:flex-end;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
 
 #filter_block {
     display: flex;
@@ -151,23 +166,26 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-gap: 2rem;
 }
+
+main, header, .section_search, .section_activites {
+    margin: 2rem;
+}
+
 /* hebergements */ 
 
-.grid_hebergements  {
+.section_hebergements {
+    background: #F2F2F2;
+    border: 1px  hidden #F2F2F2;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.grid_hebergements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 2rem;
 } 
-
-.section_hebergements {
-    padding: 2rem;
-}
-.section_hebergements > .cards, aside > div { 
-    background: #F2F2F2;
-    padding: 0.50rem;
-}
-
 .hebergements {
     margin-left: 0.75rem;
 }   
@@ -192,14 +210,21 @@ div > i.fa-star:nth-child(1) {
     margin: 0;
 }
 
-div {
-    background: white;  
+.cards {
+    grid-gap: 2rem;
+    background: white;
+    border: 1px  hidden #F2F2F2;
+    border-radius: 20px;
 }
-div > img {
+
+.img_hebergements {
     width: 100%;
     height: 8rem;
     /* 1rem = 16px quand l'html est initialisé à 100% */
     object-fit: cover;
+    padding: 2px 0px 2px 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .blue {
@@ -210,44 +235,103 @@ div > img {
     color: #F2F2F2;
 }
 
+.afficher_plus {
+    margin-top: 5px;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
 /* Populaires*/
 
-
-
-/* Activités */
-
-.section_activites {
-    background: white;
+aside {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2rem;
 }
 
+aside > div {
+    display: flex;
+    align-content: space-around;
+} 
+
+.grid_populaires {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (auto);
+}
+
+.img_populaires {
+    border-radius: 20px;
+    width: 100%;
+    height: 8rem;
+}
+
+.cards_populaires {
+    background: white; 
+    margin: 2rem;
+    border: 1px  hidden #F2F2F2;
+    border-radius: 20px;
+}
+
+.fa_star_populaires {
+    margin-left: 0.8rem 0;
+    display: flex;
+    align-items: flex-end;
+    justify-items: left;
+    margin-bottom: 0.5rem;
+}
+
+Activités 
+
+.section_activites {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+} 
+    
 .img_vieuxport {
-    height: 18rem;
-    width: 15%;
+    display: flex;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px; 
+    height: 25rem;
+    width: 20%;
 }
 
 .img_fort {
-    height: 9rem;
-    width: 15%;
+    display: flex;
+    align-content: space-between;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    height: 10rem;
+    width: 20%;
 }
 
 .img_frioul {
-    height: 9rem;
-    width: 15%;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    height: 5rem;
+    width: 20%;
 }
 .img_calanques {
-    height: 18rem;
-    width: 15%;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    height: 20rem;
+    width: 20%;
 }
 
 .img_notredame {
-    height: 9rem;
-    width: 15%;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    height: 5rem;
+    width: 20%;
 }
 
 .img_longchamp {
-    height: 9rem;
-    width: 15%;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    height: 10rem;
+    width: 20%;
 }
+
 
 /* footer */
 
