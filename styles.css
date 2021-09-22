@@ -69,7 +69,7 @@ a:hover {
 
 #rechercher {
     height: 20px;
-    border: 20px 20px 20px solid #F2F2F2;
+    border: 20px 20px 20px 20px solid #F2F2F2;
     border-radius: 10px;
     padding: 15px;
 }
@@ -109,7 +109,7 @@ h2 {
     padding-top: 10px;
     flex-direction: row;
     border-radius: 5px;
-}
+} 
 
 .eco, .family, .romantic,.allowed {
     display: flex;
@@ -118,12 +118,16 @@ h2 {
     padding: 15px;
     border: 10px 10px 10px solid #F2F2F2;
     border-radius: 20px;
-    color: black;
+    color:  black;
 } 
 
 .filter_button {
     display: flex;
+    border: 2px #F2F2F2;
     align-content: flex-end;
+    height: 20px;
+    border: 20px 20px 20px 20px solid #F2F2F2;
+    border-radius: 10px;
     color: white;
     padding: 15px;
 } 
@@ -149,10 +153,12 @@ main {
 }
 /* hebergements */ 
 
-.grid_hebergements {
+.grid_hebergements > .cards {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
     grid-gap: 2rem;
-}
+} 
 
 .section_hebergements {
     padding: 2rem;
@@ -206,9 +212,6 @@ div > img {
 
 /* Populaires*/
 
-aside {
-    grid-gap: 2rem;
-}
 
 
 /* Activités */
