@@ -69,10 +69,9 @@ a:hover {
 
 input[type="search"]  {
     height: 40px;
-    border: 2px  solid #F2F2F2;
+    border: 2px  solid;
     border-radius: 5px;
     padding: 20px;
-    color: #0065FC;
 }
 
 .Rechercher {
@@ -147,11 +146,7 @@ h3 {
     padding: 15px;
 } 
 
-#money, #child, #heart, #dog, #loupe, .fa-map-marker-alt {
-    color: #0065FC;
-}
-
-#info {
+#money, #child, #heart, #dog, #loupe, .fa-map-marker-alt, #info  {
     color: #0065FC;
 }
 
@@ -164,11 +159,11 @@ h3 {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 0.50rem;
 }
 
 main, header, .section_search, .section_activites {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 /* hebergements */ 
@@ -177,6 +172,7 @@ main, header, .section_search, .section_activites {
     background: #F2F2F2;
     border: 1px  hidden #F2F2F2;
     border-radius: 20px;
+    width: 55rem;
     padding: 2rem;
 }
 
@@ -214,6 +210,8 @@ div > i.fa-star:nth-child(1) {
     grid-gap: 2rem;
     background: white;
     border: 1px  hidden #F2F2F2;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
     border-radius: 20px;
 }
 
@@ -269,6 +267,7 @@ aside > div {
     background: white; 
     margin: 2rem;
     border: 1px  hidden #F2F2F2;
+    box-shadow: 0 0 1rem gray;
     border-radius: 20px;
 }
 
@@ -280,57 +279,124 @@ aside > div {
     margin-bottom: 0.5rem;
 }
 
-Activités 
+/* Activités */ 
 
 .section_activites {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+    display: block;
 } 
+
+.bloc_img_vieuxport {
+    display: inline-block;
+    flex-direction:row;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    height: 25rem;
+    width: 15%;
+}
     
 .img_vieuxport {
     display: flex;
+    align-content: flex-start;
     border: 2px hidden #F2F2F2;
     border-radius: 20px; 
-    height: 25rem;
-    width: 20%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+}
+
+.bloc_img_fort {
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
+    height: 10rem;
+    width: 15%;
 }
 
 .img_fort {
     display: flex;
-    align-content: space-between;
     border: 2px hidden #F2F2F2;
     border-radius: 20px;
-    height: 10rem;
-    width: 20%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.bloc_img_frioul {
+    display: inline-block;
+    align-content: flex-start;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
+    height: 5rem;
+    width: 15%;
 }
 
 .img_frioul {
+    display: flex;
     border: 2px hidden #F2F2F2;
     border-radius: 20px;
-    height: 5rem;
-    width: 20%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
-.img_calanques {
-    border: 2px hidden #F2F2F2;
+
+.bloc_img_calanques {
+    display: inline-block;
+    box-shadow: 0 0 1rem gray;
     border-radius: 20px;
     height: 20rem;
-    width: 20%;
+    width: 15%;
+}
+
+.img_calanques {
+    display: flex;
+    flex-direction: row;
+    border: 2px hidden #F2F2F2;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.bloc_img_notredame {
+    display: inline-block;
+    vertical-align: top;
+    align-content: flex-end;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
+    height: 5rem;
+    width: 15%;
 }
 
 .img_notredame {
+    display: flex;
+    flex-direction: column;
     border: 2px hidden #F2F2F2;
     border-radius: 20px;
-    height: 5rem;
-    width: 20%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.bloc_img_longchamp {
+    display: inline-block;
+    box-shadow: 0 0 1rem gray;
+    border-radius: 20px;
+    height: 10rem;
+    width: 15%;
 }
 
 .img_longchamp {
+    display: flex;
+    flex-direction: column;
     border: 2px hidden #F2F2F2;
     border-radius: 20px;
-    height: 10rem;
-    width: 20%;
-}
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+} 
 
 
 /* footer */
@@ -338,10 +404,10 @@ Activités
 .footer { 
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: left;
     background-color: #F2F2F2;
     border: 1px hidden; 
+    justify-content: space-around;
 }  
 
 #a_propos {
@@ -364,6 +430,7 @@ Activités
     flex-direction: row;
 }
 
-.p_footer {
-    margin-left: 20px;
+p_footer {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
