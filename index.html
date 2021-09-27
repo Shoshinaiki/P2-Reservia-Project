@@ -34,25 +34,24 @@
                     <input type="search" name="ou" placeholder="Rechercher"></div> 
                 </form> 
 
-                <div id="filter_div" >
+                 <div id="filter_div" > 
                     <h2>Filtres</h2> 
                     <div id="filter_block">
                         <div class="filter_button">
-                            <div id="money"><i class="fas fa-money-bill-wave"><div></div></i></div>
-                            <button class="eco" type="submit"><strong>Economique</strong></button> 
+                            <div><i class="fas fa-money-bill-wave"></i></div>
+                            <button type="submit"><strong>Economique</strong></button> 
                         </div> 
                         <div class="filter_button"> 
-                            <div id="child"><i class="fas fa-child"><div></div></i></div>
-                            <button class="family" type="submit"><strong>Familial</strong></button>
+                            <div><i class="fas fa-child"></i></div>
+                            <button type="submit"><strong>Familial</strong></button>
                         </div> 
                         <div class="filter_button">
-                            <div id="heart"><i class="fas fa-heart"><div></div></i></div>
-                            <button class="romantic" type="submit"><strong>Romantique</strong></button>
+                            <div><i class="fas fa-heart"></i></div>
+                            <button type="submit"><strong>Romantique</strong></button>
                         </div> 
                         <div class="filter_button">
-                            <div id="dog"><span></span></i>
-                              </span><i class="fas fa-dog"><div></div></i></div>
-                            <button class="allowed" type="submit"><strong>Animaux autorisés</strong></button>
+                            <div><i class="fas fa-dog"></i></div>
+                            <button type="submit"><strong>Animaux autorisés</strong></button>
                         </div> 
                     </div>
                 </div> 
@@ -216,25 +215,34 @@
                 </aside>
             </main>
             <section class="section_activites">
-                <h2>Activités à Marseille</h2>
-                    <div class="bloc_img_vieuxport">
-                        <a href="#"><img class="img_vieuxport" src="img/activites/4_small/vieux_port.jpg" alt="image Vieux Port"><p class="p_activites">Vieux Port</p></a>
+                <h2 class="h2_activites">Activités à Marseille</h2>
+                <div class="grid_activites">
+                    <figure>
+                        <a href="#"><img class="img_vieuxport" src="img/activites/4_small/vieux_port.jpg" alt="image Vieux Port"></a> 
+                        <figcaption>Vieux Port</figcaption>
+                    </figure>
+                    <div class="fort_frioul">
+                        <figure>
+                            <a href="#"><img class="img_fort" src="img/activites/4_small/fort_de_pomegues.jpg" alt="image Fort de Pomègues"></a>
+                            <figcaption>Fort de Pomègues</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img class="img_frioul" src="img/activites/4_small/iles_du_frioul.jpg" alt="image Iles du Frioul"></a>
+                            <figcaption>Iles du Frioul</figcaption>
+                        </figure>
                     </div>
-                    <div class="bloc_img_fort">
-                        <a href="#"><img class="img_fort" src="img/activites/4_small/fort_de_pomegues.jpg" alt="image Fort de Pomègues"><p class="p_activites">Fort de Pomègues</p></a>
-                    </div>
-                    <div class="bloc_img_frioul">
-                        <a href="#"><img class="img_frioul" src="img/activites/4_small/iles_du_frioul.jpg" alt="image Iles du Frioul"><p class="p_activites">Iles du Frioul</p></a>
-                    </div>
-                    <div class="bloc_img_calanques">
-                        <a href="#"><img class="img_calanques" src="img/activites/4_small/parc_national_des_calanques.jpg" alt="image Parc National des Calanques"><p class="p_activites">Parc National des Calanques</p></a>
-                    </div>
-                    <div class="bloc_img_notredame">
-                        <a href="#"><img class="img_notredame" src="img/activites/4_small/notre_dame_de_la_garde.jpg" alt="image Notre-Dame-de-la-garde"><p class="p_activites">Notre-Dame-de-la-garde</p></a>
-                    </div>
-                    <div class="bloc_img_longchamp">
-                        <a href="#"><img class="img_longchamp" src="img/activites/4_small/parc_longchamp.jpg" alt="image Parc Longchamp "><p class="p_activites">Parc Longchamp</p></a> 
-                    </div>
+                    <figure>
+                        <a href="#"><img class="img_calanques" src="img/activites/4_small/parc_national_des_calanques.jpg" alt="image Parc National des Calanques"></a>
+                        <figcaption>Parc National des Calanques</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="img_notredame" src="img/activites/4_small/notre_dame_de_la_garde.jpg" alt="image Notre-Dame-de-la-garde"> <figcaption>Notre-Dame-de-la-garde</figcaption></a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img class="img_longchamp" src="img/activites/4_small/parc_longchamp.jpg" alt="image Parc Longchamp "></a> 
+                        <figcaption>Parc Longchamp</figcaption>
+                    </figure>
+                </div> 
             </section> 
         <footer class="footer"> 
             <div id="a_propos"><h2 class="h2_footer">A propos</h2>
