@@ -13,26 +13,14 @@ html {
 
 header {
     display: flex;
-    flex-direction: column;
-    margin: auto;  
-}
-
-#trait { 
-        border-top: 3px solid #0065FC;
-        margin-bottom: 20px;
-        margin-left: 840px;
-        margin-right: 440px; 
-} 
-
-.logo_reservia {
-    width: none;
-    height: none;
-    object-fit: none;
+    flex-direction: row;
+    margin: auto;
+    width: auto;
 }
 
 #main_nav {
-    display: grid;
-    grid-template-columns: 60% auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 a {
@@ -40,24 +28,38 @@ a {
 }
 
 .nav_logo {
-    order: 1;
-    
+    display: flex;
+    width: 70%;
+}
+
+.logo_reservia {
+    height: none;
+    object-fit: none;
+}
+
+#main_nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
 
 .nav_link_1 {
-    margin-bottom: 20px;
-    order: 2;
-    color: #0065FC;   
+    display: flex;
+    color: #0065FC;
+    border-top-color: #0065FC;
+    
 }
 
 .nav_link_2 {
-    order: 3;
+    display: flex;
     color:  gray;
+    font-weight: 600;
 }
 
 .sinscrire {
-    order: 4;
+    display: flex;
     color: #0065FC;
+
 }
 
 a:hover {   
@@ -67,31 +69,74 @@ a:hover {
 
 /* Recherches */
 
-input[type="search"]  {
+.fa-map-marker-alt {
+    border: 2px  solid #F2F2F2;
+    padding: 15px;
+    height: 10px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.fa-money-bill-wave {
+    height: 0.2px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.lieu {
+    display: flex;
+    background-color: white;
     height: 40px;
-    border: 2px  solid;
-    border-radius: 5px;
+    border: 2px  solid #F2F2F2;
     padding: 20px;
 }
-#filter_block {
+
+::placeholder lieu  {
+   background-color: red;
+}
+
+.recherche {
     display: flex;
+    background-color: #0065FC;
+    color: white;
+    height: 40px;
+    border: 2px  solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+
+#filter_block {
     padding-top: 10px;
-    flex-direction: row;
     border-radius: 5px;
     color: black;
 } 
 
-.submit {
-    align-content: center;
-    padding: 50px;
+button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
     margin-right: 4rem;
-    border: 2px solid #F2F2F2;
-    width: 12rem;
+    border: 3px solid #F2F2F2;
+    width: 10rem;
     border-radius: 25px; 
     background-color: white;
 } 
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-loupe, .fa-map-marker-alt, #info  {
+span {
+    padding-right: 0rem;
+}
+
+.fa-circle {
+    color: #DEEBFF;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-loupe, #info  {
     color: #0065FC;
 }
 
@@ -111,11 +156,15 @@ h1 {
     font-size: 1.2em;
 }
 
+.p_centre_ville {
+    display: flex;
+}
+
 .search {
     display: flex;
 }
 
-#filter_div { 
+#filter_button, div { 
     display: flex;
     flex-direction: row;
 } 
@@ -145,6 +194,10 @@ main {
 main, header, .section_search, .section_activites {
     margin: 3rem;
 }
+
+.info {
+   background-color: white;
+} 
 
 /* hebergements */ 
 
@@ -233,6 +286,7 @@ aside > div {
 } 
 
 .cards_populaires {
+    display: flex;
     background: white; 
     margin: 2rem;
     border: 1px  hidden #cfc6c6;
