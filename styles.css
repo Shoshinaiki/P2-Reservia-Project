@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0rem 2rem;
+    margin: 0 2rem 0 2rem;
 }
 
 html {
@@ -17,6 +17,7 @@ html {
 
 header {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     margin: auto;
     width: auto;
@@ -29,7 +30,6 @@ a {
 .nav_logo {
     display: flex;
     width: 70%;
-    padding-left: 0px;
 }
 
 .logo_reservia {
@@ -50,6 +50,7 @@ nav {
 
 .nav_link_1 {
     display: flex;
+    align-items: center;
     color: black;
     padding: 20px;
 }
@@ -61,8 +62,14 @@ nav {
 
 .nav_link_2 {
     display: flex;
+    align-items: center;
     color:black;
     padding: 20px;
+}
+
+.nav_link_2:hover {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
 }
 
 .sinscrire {
@@ -90,7 +97,7 @@ a:hover {
 
 .fa-stack {
     display: inline-block;
-    line-height: 2em;
+    left: -4px;
     position: relative;
     vertical-align: middle;
     width: 3rem;
@@ -169,6 +176,7 @@ span {
 
 .fa-circle {
     color: #DEEBFF;
+    size: 25px;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-loupe, #info  {
@@ -237,18 +245,14 @@ h3 {
     font-size: 0.9rem;
 }
 
+
 /* Main */
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 73% 20%;
+    gap: 2rem;
 }
-
-main, header, .section_search, .section_activites {
-    margin: 4rem;
-}
-
 
 /* hebergements */ 
 
@@ -261,6 +265,11 @@ main, header, .section_search, .section_activites {
     padding: 2rem;
 }
 
+.hebergements {
+    display: flex;
+    flex-direction: column;
+}
+
 .grid_hebergements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -269,7 +278,7 @@ main, header, .section_search, .section_activites {
 } 
 
 .hebergements > div {  
-    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .hebergements > div > .fa-star {
@@ -332,13 +341,14 @@ div > i.fa-star:nth-child(1) {
 aside {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 20rem;
-    height: 40rem;
+    width: auto;
+    height: auto;
     padding: 2rem;
 }
 
 .h2_populaires, .fa-chart-line {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
