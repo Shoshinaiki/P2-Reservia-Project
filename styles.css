@@ -40,7 +40,7 @@ a {
 .right {
     display: flex;
     justify-content: space-around;
-}
+} 
 
 nav {
     display: flex;
@@ -50,7 +50,7 @@ nav {
 
 .nav_link_1 {
     display: flex;
-    align-items: center;
+   /* align-items: center; */
     color: black;
     padding: 20px;
 }
@@ -62,7 +62,7 @@ nav {
 
 .nav_link_2 {
     display: flex;
-    align-items: center;
+   /* align-items: center; */
     color:black;
     padding: 20px;
 }
@@ -90,6 +90,7 @@ a:hover {
     border: 2px  solid #F2F2F2;
     padding: 15px;
     height: 10px;
+    align-content: center;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -176,7 +177,7 @@ span {
 
 .fa-circle {
     color: #DEEBFF;
-    size: 25px;
+    size: 0.80rem;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-loupe, #info  {
@@ -250,7 +251,7 @@ h3 {
 
 main {
     display: grid;
-    grid-template-columns: 73% 20%;
+    grid-template-columns: 60% 35%;
     gap: 2rem;
 }
 
@@ -310,6 +311,9 @@ div > i.fa-star:nth-child(1) {
     border-top-right-radius: 20px;
 }
 
+p {
+    margin-top: 0px;
+}
 .blue {
     color: #0065FC;
 }
@@ -339,6 +343,9 @@ div > i.fa-star:nth-child(1) {
 /* Populaires */
 
 aside {
+    display: grid; 
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr, 2fr;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: auto;
@@ -352,18 +359,15 @@ aside {
     justify-content: space-between;
 }
 
-.grid_populaires { 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.grid_populaires {   
+    display: inline-block;
+    flex-direction: row;
 } 
 
 .cards_populaires {
     display: flex;
     flex-direction: row;
     background: white; 
-    /* width: 100%;
-    height: 10rem; */
     margin: 2rem;
     border: 1px  hidden #cfc6c6;
     box-shadow: 0 0 1rem gray;
@@ -375,10 +379,14 @@ aside {
     margin-left: 1rem;
 }   
 
+.h3_populaires, .p_populaires {
+    margin-bottom: 0px;
+}
+
 .p_populaires {
     display: flex;
+    padding-bottom: 0px;
     margin: 1rem;
-    width: 100%;
 } 
 .hebergements_populaires {
     display: flex;
@@ -387,22 +395,24 @@ aside {
     flex-direction: column;
 } 
 
+.hebergements_populaires > div {
+    padding-bottom: 0rem;
+}
+
 .img_populaires {
-    display: flex;
-    width: 30%;
+    width: auto;
     height: 8rem;
     /* 1rem = 16px quand l'html est initialisé à 100% */
     object-fit: cover;
-    padding: 2px 2px 2px 2px;
-    border-radius: 20px;
-    border-radius: 20px;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .fa_star_populaires {
     display: flex;
     flex-direction: row;
     margin-left: 0.8rem 0;
-    margin-bottom: 0.5rem;
 } 
 
 /* Activités */ 
@@ -542,6 +552,7 @@ aside {
     border: 1px hidden; 
     justify-content: space-around;
     margin: 0px;
+    padding: 0px;
 }  
 
 #a_propos {
