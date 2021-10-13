@@ -14,6 +14,10 @@ html {
     margin: auto;
 }
 
+body {
+    margin: 0px;
+}
+
 /* header */ 
 
 header {
@@ -72,6 +76,7 @@ header {
 
 .sinscrire {
     color: black;
+    margin-right: 2rem;
 }
 
 a {
@@ -202,7 +207,8 @@ button {
 
 .p_info {
     margin-left: 2rem;
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 /* main */
@@ -222,6 +228,8 @@ button {
 }
 
 .h2_hebergements {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 2rem;
     font-size: 1.0rem;
 }
@@ -271,7 +279,8 @@ button {
 }
 
 .afficher_plus {
-    padding-left: 40px;
+    margin: 2rem;
+    padding-left: 5px;
     font-weight: 700;
 }
 
@@ -289,6 +298,11 @@ aside {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 2rem;
+}
+
+.h2_populaires {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .h2_populaires, .fa-chart-line {
@@ -327,9 +341,11 @@ aside {
 .img_populaires {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    padding: 2px 0px 2px 2px;
     height: 8rem;
     width: 7.5rem;
-}
+    object-fit: cover;
+} 
 
 .stars_populaires {
     padding-top: 2rem;
@@ -345,6 +361,7 @@ aside {
 }
 
 .h2_activites {
+    margin-top: 3rem;
     font-size: 1.0rem;
 }
 
@@ -352,7 +369,6 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
-    /* margin: 0rem 2rem 2rem 2rem; */
 }
 
 .cards_vieuxport, .cards_calanques {
@@ -415,14 +431,8 @@ aside {
     height: 100px;
 }
 
-/* .cardsIles > a {
-    flex: 80%;
-    height: 1rem;
-} */
-
 .notredame_longchamp {
     display: grid;
-    /* grid-template-rows: 2fr 1fr; */
     gap: 2rem;
 }
 
@@ -442,23 +452,32 @@ aside {
 /* Footer */ 
 
 .footer {
-    display: flex;
     gap: 10rem;
     background-color: #F2F2F2;
-    padding: 2rem;
+    padding: 2rem; 
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    /* width: 80%; */
 }
 
 .A_propos, .Nos_hébergements, .Assistance {
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
-.APropos {
+.h3_footer {
+    margin-bottom: 5px;
+}
+
+.A_propos {
+    padding-left: 2rem;
     margin-left: 0px;
 }
 
-.p_footer {
+.p_a_propos, .p_footer_nos_hebergements, .p_footer_assistance {
     margin-top: 0px;
     margin: 0px;
-    padding-top: 15px;
+    padding-bottom: 10px;
 } 
