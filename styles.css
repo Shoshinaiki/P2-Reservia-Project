@@ -10,8 +10,8 @@ header, .section_recherche, .hebergements, aside, .activites {
 
 html {
     font-size: 100%;
-    max-width: 1450px;
-    margin: auto;
+    max-width: 1450x;
+    margin: auto; 
 }
 
 body {
@@ -162,8 +162,8 @@ input.recherche::placeholder {
 
 .fa-circle {
     color: #DEEBFF;
-    font-size-adjust: 20px;;
-}
+} 
+
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
@@ -245,7 +245,7 @@ button {
 .cards_hebergements {
     background: white;
     border-radius: 20px;
-    box-shadow: 0 0 1rem gray;
+    box-shadow: 0 0 1rem grey;
 }
 
 
@@ -314,10 +314,13 @@ aside {
     font-size: 1.0rem;
 }
 
+/* .h3_populaires {
+} */ 
+
 .cards_populaires {
     background: white;
     border-radius: 20px;
-    box-shadow: 0 0 1rem gray;
+    box-shadow: 0 0 1rem grey;
     display: flex;
     flex-direction: row;
 }
@@ -362,6 +365,7 @@ aside {
 
 .h2_activites {
     margin-top: 3rem;
+    margin-bottom: 1.5rem;
     font-size: 1.0rem;
 }
 
@@ -374,7 +378,7 @@ aside {
 .cards_vieuxport, .cards_calanques {
     height: 100%;
     width: 100%;
-    box-shadow: 0 0 1rem gray;
+    box-shadow: 0 0 1rem grey;
     border-radius: 20px; 
 }
 
@@ -406,7 +410,7 @@ aside {
     grid-template-rows: 87% 13%;
     height: 315px;
     width: 100%;
-    box-shadow: 0 0 1rem gray;
+    box-shadow: 0 0 1rem grey;
     border-radius: 20px; 
 }
 
@@ -419,7 +423,7 @@ aside {
     grid-template-rows: 72% 28%;
     height: 158px;
     width: 100%;
-    box-shadow: 0 0 1rem gray;
+    box-shadow: 0 0 1rem grey;
     border-radius: 20px; 
 }
 
