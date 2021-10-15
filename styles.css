@@ -248,22 +248,24 @@ button {
     padding: 0 2rem 0 2rem;
 }
     
-.cards_hebergements {
-    height: 13.5rem; 
-    width: 18.5rem;
+.cards_hebergements { 
+    width: 100%;
     background: white;
     border-radius: 20px;
     box-shadow: 0 0 1rem grey;
 
 }
 
+.cards_hebergements >  div {
+    padding: 3px;
+}
+
 
 .img_hebergements {
-    padding: 4px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 8rem;
-    width: 18rem;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -283,7 +285,7 @@ button {
 }
 
 .stars_hebergements {
-    padding-left: 18px;
+    margin-left: 15px;
     margin-bottom: 5px;
 }
 
@@ -523,5 +525,16 @@ aside {
 @media (max-width: 1180px) {
     .hebergements {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1020px) {
+    .hebergements {
+        display: flex;
+    }
+
+    .cards_hebergements {
+        display: flex;
+        flex-direction: column;
     }
 }
