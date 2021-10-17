@@ -175,7 +175,7 @@ input.recherche::placeholder {
     color: #0065FC;
 }
 
-.button {
+.button, .button_romantic, .button_animals {
     height: 100%;
     color: black;
     background-color: white;
@@ -491,7 +491,7 @@ aside {
 }
 
 .A_propos {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     margin-left: 0px;
 }
 
@@ -503,38 +503,77 @@ aside {
 
 /* responsive */
 
-@media (max-width: 1460px) {
+@media (max-width: 1140px) {
     #main {
         grid-template-columns: 1fr;
     }
+} 
+
+/* Mettre les éléments enfants de main sur 1 colonne */
+
+aside {
+    grid-area: 1/1/2/2;
 }
 
-@media (max-width: 1050px) {
-    .link1, .link2 {
-        flex-wrap: wrap;
-    }
+/* 1ère valeur c'est le début de la ligne
+   2ème valeur c'est la colonne de départ
+   3ème valeur c'est la ligne de fin
+   4ème valeur c'est la fin de la colonne */
 
-}
-
-@media (max-width: 1450px) {
-    .hebergements {
-        margin: 10rem;
-    }
-}
-
-@media (max-width: 1180px) {
-    .hebergements {
+@media (max-width:830px) {
+    .hebergements_grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 1020px) {
-    .hebergements {
-        display: flex;
+@media (max-width: 830px) {
+    .activites_grid { 
+        grid-template-columns: 1fr;
     }
+}
 
-    .cards_hebergements {
+@media (max-width: 830px) {
+    .footer {
+        display: block;
+    }
+}
+
+@media (max-width: 830px) {
+    .button_romantic {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 830px) {
+    .button_animals {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 830px) {
+    .link1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .link2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .link1:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .link2:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
