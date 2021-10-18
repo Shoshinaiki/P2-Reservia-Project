@@ -471,7 +471,7 @@ aside {
 /* Footer */ 
 
 .footer {
-    gap: 10rem;
+    gap: 5rem;
     background-color: #F2F2F2;
     padding: 2rem; 
     display: flex;
@@ -511,9 +511,12 @@ aside {
 
 /* Mettre les éléments enfants de main sur 1 colonne */
 
-aside {
-    grid-area: 1/1/2/2;
+@media (max-width: 830px) {
+    aside {
+        grid-area: 1;
+    } 
 }
+   
 
 /* 1ère valeur c'est le début de la ligne
    2ème valeur c'est la colonne de départ
