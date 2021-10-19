@@ -73,11 +73,23 @@ header {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
+.inscription {
+    display: flex;
+    height: 100%;
+}
 
 .sinscrire {
+    display: flex;
     color: black;
+    align-items: center;
     margin-right: 2rem;
+}   
+
+.sinscrire:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
+
 
 a {
     text-decoration: none;
@@ -203,7 +215,7 @@ button {
     flex-direction: row;
 }
 
-.info > .fa-stack >  .fa-circle {
+.fa-circle {
     border-color: black;
 }
 
@@ -211,6 +223,7 @@ button {
     padding-left: 0px;
     background-color: white;
     justify-items: center;
+    padding-top: 1rem;
     color: #0065FC;
 }
 
@@ -329,9 +342,6 @@ aside {
     font-size: 1.0rem;
 }
 
-/* .h3_populaires {
-} */ 
-
 .cards_populaires {
     background: white;
     border-radius: 20px;
@@ -350,7 +360,16 @@ aside {
 }
 
 .h3_populaires {
-    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.h3_populaires_le_soleil, .h3_populaires_au_coeur_de_l_eau, .h3_populaires_tout_bleu_et_blanc {
+    font-size: 0.8rem;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .h3_populaires, .p_populaires {
@@ -370,7 +389,7 @@ aside {
 } 
 
 .stars_populaires {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-left: 15px;
 }
 
@@ -502,6 +521,7 @@ aside {
     margin-top: 0px;
     margin: 0px;
     padding-bottom: 10px;
+    color: black; 
 } 
 
 /* responsive */
