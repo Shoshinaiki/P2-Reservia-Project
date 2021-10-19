@@ -175,7 +175,7 @@ input.recherche::placeholder {
     color: #0065FC;
 }
 
-.button, .button_romantic, .button_animals {
+.button_economic, .button_family, .button_romantic, .button_animals {
     height: 100%;
     color: black;
     background-color: white;
@@ -203,8 +203,11 @@ button {
     flex-direction: row;
 }
 
-.fa-info-circle {
-    margin-top: 2rem; 
+.info > .fa-stack >  .fa-circle {
+    border-color: black;
+}
+
+.fa-info {
     padding-left: 0px;
     background-color: white;
     justify-items: center;
@@ -231,6 +234,7 @@ button {
     background: #F2F2F2;
     border-radius: 20px;
     margin-right: 0px;
+    margin-left: 2rem;
 }
 
 .h2_hebergements {
@@ -375,6 +379,7 @@ aside {
 #activites {
     display: flex;
     flex-direction: column;
+    margin: 0 2rem 2rem 2rem;
     margin-bottom: 2rem;
 }
 
@@ -571,6 +576,7 @@ aside {
     }
     .fort_iles {
         display: grid;
+        grid-template-rows: 1fr 1fr;
         gap: 2rem;
     }
     .cards_vieuxport, .cards_calanques {
@@ -581,7 +587,7 @@ aside {
     }
     .cards_iles, .cards_notredame {
         display: grid;
-        grid-template-rows: 72% 28%;
+        grid-template-rows: 75% 25%;
         height: 10.5rem;
         width: 100%;
         box-shadow: 0 0 1rem grey;
@@ -589,7 +595,7 @@ aside {
     }
     .cards_fort, .cards_longchamp {
         display: grid;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 75% 25%;
         height: 10.5rem;
         width: 100%;
         box-shadow: 0 0 1rem grey;
@@ -613,24 +619,18 @@ aside {
     .A_propos, .Nos_hébergements, .Assistance {
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 100%;
         margin-left: 2rem;
     }
 }
-@media (max-width: 600px) {
-    .button_romantic {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 /* smartphone */ 
 
 @media (max-width: 500px) {
     aside {
         background: #F2F2F2;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     } 
     #hebergements {
         background: white;
@@ -638,33 +638,83 @@ aside {
     }
     .hebergements_grid {
         grid-template-columns: 1fr;
+        padding: 0px;    
     }
     .activites_grid { 
         grid-template-columns: 1fr;
     }
-    .button_animals {
+    .fort_iles {
+        display: grid;
+        gap: 2rem;
+    }
+    .button_economic, .button_family, .button_romantic, .button_animals {
         display: flex;
         flex-wrap: wrap;
     }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 5rem; 
+    }
+    
+    #logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 70%;
+    }
+    
+    .img_logo {
+        height: 40px;
+        width: 80px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .link {
+        display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+        height: 100%;
+    }
+    
+    .link1, .link2 {
+        color: black;
+        margin-right: 5rem;
+        align-items: center;
+    }
+    
     .link1 {
         display: flex;
-        flex-wrap: wrap;
     }
+    
     .link2 {
         display: flex;
-        flex-wrap: wrap;
     }
+    
     .link1:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
-        display: flex;
-        flex-wrap: wrap;
     }
     
     .link2:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
-        display: flex;
-        flex-wrap: wrap;
+    }
+    
+    .sinscrire {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: black;
+        margin-right: 2rem;
+    }
+    
+    a {
+        text-decoration: none;
     }
 }
