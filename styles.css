@@ -10,7 +10,7 @@ header, .section_recherche, .hebergements, aside, .activites {
 
 html {
     font-size: 100%;
-    max-width: 1450x;
+    max-width: 1450px;
     margin: auto; 
 }
 
@@ -227,7 +227,7 @@ button {
 
 /* section hébergements */
 
-.hebergements {
+#hebergements {
     background: #F2F2F2;
     border-radius: 20px;
     margin-right: 0px;
@@ -372,7 +372,7 @@ aside {
 
 /* section activités */
 
-.activites {
+#activites {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
@@ -477,7 +477,6 @@ aside {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    /* width: 80%; */
 }
 
 .A_propos, .Nos_hébergements, .Assistance {
@@ -491,7 +490,6 @@ aside {
 }
 
 .A_propos {
-    /* padding-left: 2rem; */
     margin-left: 0px;
 }
 
@@ -503,69 +501,159 @@ aside {
 
 /* responsive */
 
-@media (max-width: 1140px) {
+/* tablette */
+
+@media (max-width: 1150px) {
     #main {
         grid-template-columns: 1fr;
     }
-} 
-
-/* Mettre les éléments enfants de main sur 1 colonne */
-
-@media (max-width: 830px) {
+    #hebergements {
+        background: #F2F2F2;
+        border-radius: 20px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
     aside {
         grid-area: 1;
-    } 
-}
-   
-
-/* 1ère valeur c'est le début de la ligne
-   2ème valeur c'est la colonne de départ
-   3ème valeur c'est la ligne de fin
-   4ème valeur c'est la fin de la colonne */
-
-@media (max-width:830px) {
-    .hebergements_grid {
-        grid-template-columns: 1fr;
+        background: #F2F2F2;
+        border-radius: 20px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-}
-
-@media (max-width: 830px) {
-    .activites_grid { 
-        grid-template-columns: 1fr;
+    #activites {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-}
-
-@media (max-width: 830px) {
+    .h2_activites {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.0rem;
+    }
+    .fort_iles {
+        display: grid;
+        gap: 2rem;
+    }
     .footer {
         display: block;
     }
+} 
+@media (max-width: 970px) {
+    .hebergements_grid {
+        grid-template-columns: 1fr;
+    }
+    .activites_grid { 
+        grid-template-columns: 1fr;
+    }
+    #activites {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .h2_activites {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.0rem;
+    }
+    .img_vieuxport, .img_calanques {
+        display: grid;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 8rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .fort_iles {
+        display: grid;
+        gap: 2rem;
+    }
+    .cards_vieuxport, .cards_calanques {
+        height: 10.5rem;
+        width: 100%;
+        box-shadow: 0 0 1rem grey;
+        border-radius: 20px; 
+    }
+    .cards_iles, .cards_notredame {
+        display: grid;
+        grid-template-rows: 72% 28%;
+        height: 10.5rem;
+        width: 100%;
+        box-shadow: 0 0 1rem grey;
+        border-radius: 20px; 
+    }
+    .cards_fort, .cards_longchamp {
+        display: grid;
+        grid-template-rows: 87% 13%;
+        height: 10.5rem;
+        width: 100%;
+        box-shadow: 0 0 1rem grey;
+        border-radius: 20px; 
+    }
+    .img_fort, .img_longchamp {
+        display: grid;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 8rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .img_iles, .img_notredame {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 8rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .A_propos, .Nos_hébergements, .Assistance {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 2rem;
+    }
 }
-
-@media (max-width: 830px) {
+@media (max-width: 600px) {
     .button_romantic {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 830px) {
+/* smartphone */ 
+
+@media (max-width: 500px) {
+    aside {
+        background: #F2F2F2;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+    #hebergements {
+        background: white;
+        border-radius: 20px;
+    }
+    .hebergements_grid {
+        grid-template-columns: 1fr;
+    }
+    .activites_grid { 
+        grid-template-columns: 1fr;
+    }
     .button_animals {
         display: flex;
         flex-wrap: wrap;
     }
-}
-
-@media (max-width: 830px) {
     .link1 {
         display: flex;
         flex-wrap: wrap;
     }
-    
     .link2 {
         display: flex;
         flex-wrap: wrap;
     }
-    
     .link1:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
