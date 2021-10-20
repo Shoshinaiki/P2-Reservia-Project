@@ -21,16 +21,16 @@ body {
 /* header */ 
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 75% 12.5% 12.5%;
     height: 5rem; 
+    width: 100%;
     align-items: center;
 }
 
 #logo {
     height: auto;
-    width: 70%;
+    order: 1;
 }
 
 .img_logo {
@@ -38,16 +38,12 @@ header {
     width: 80px;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .link {
     display: flex;
     justify-content: space-around;
     height: 100%;
+    margin-right: 8rem;
+    order: 2;
 }
 
 .link1, .link2 {
@@ -61,7 +57,7 @@ header {
 }
 
 .link2 {
-    display: flex;
+    display: flex;   
 }
 
 .link1:hover {
@@ -76,6 +72,7 @@ header {
 .inscription {
     display: flex;
     height: 100%;
+    order: 3;
 }
 
 .sinscrire {
@@ -83,6 +80,7 @@ header {
     color: black;
     align-items: center;
     margin-right: 2rem;
+
 }   
 
 .sinscrire:hover {
@@ -568,6 +566,40 @@ aside {
     } 
 } 
 @media (max-width: 970px) {
+    header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 5rem; 
+    align-items: center;
+    }
+    .logo {
+        order: 1;
+    }
+    .link {
+        grid-column: 1 / 4;
+        order: 3;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .link1 {
+        flex: 50%;
+        margin-right: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .link2 {
+        flex: 50%;
+        margin-right: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    .inscription {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+    }
     .hebergements_grid {
         grid-template-columns: 1fr;
     }
@@ -671,27 +703,12 @@ aside {
         display: flex;
         flex-wrap: wrap;
     }
-    header {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .sinscrire {
-        grid-template-columns: 1fr;
-    }
-    .link {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        height: 100%;
-    }
-    .link1, .link2  {
-        padding: 0 2rem;
-    }
     .link1:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
+    
     .link2:hover {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
