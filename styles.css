@@ -68,6 +68,7 @@ header {
 .link2:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
+    
 }
 .inscription {
     display: flex;
@@ -77,17 +78,11 @@ header {
 
 .sinscrire {
     display: flex;
-    color: black;
+    color: #0065FC;
     align-items: center;
     margin-right: 2rem;
-
+    font-weight: 700;
 }   
-
-.sinscrire:hover {
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
-}
-
 
 a {
     text-decoration: none;
@@ -208,28 +203,30 @@ button {
     font-size: 0.8rem;
 }
 
-.info {
+.div_info {
     display: flex;
-    flex-direction: row;
 }
 
-.info > fa fa-circle fa-stack-2x {
-    border-color: black;
+.div_img {
+    border-radius: 1rem;
+    width: 20px;
+    min-width: 20px;
+    margin-top: 13px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid grey;
 }
+
 
 .fa-info {
-    padding-left: 0px;
-    background-color: white;
-    justify-items: center;
-    padding-top: 1rem;
+    margin: auto;
+    padding-bottom: 1px;
+    font-size: 0.7rem;
     color: #0065FC;
-    border-color: black;
 }
 
 .p_info {
-    margin-left: 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 /* main */
@@ -703,15 +700,40 @@ aside {
         display: flex;
         flex-wrap: wrap;
     }
-    .link1:hover {
+    .link {
+        grid-column: 1 / 4;
+        order: 3;
+        display: flex;
+        justify-content: right;
+        height: 100%;
+        margin-right: 0px;
+        margin-top: 1rem;
+    }
+    .link1 {
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
-    
-    .link2:hover {
+    .link1:hover {
+        border-top: none; 
+    }
+    .link2 {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        color: gray;
+        color: black;
+    }
+    .link2:hover {
+        border-top: none;  
+    }
+    h1 {
+        display: flex;
+        font-size: 1.2rem;
+        padding-top: 2rem;
+    }
+    form > .fa-map-marker-alt {
+        object-position: none;
+    }
+    form > .fa-search {
+        object-position: left;
     }
 }
