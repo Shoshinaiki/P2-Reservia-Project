@@ -215,7 +215,7 @@ button {
     flex-direction: row;
 }
 
-.fa-circle {
+.info > fa fa-circle fa-stack-2x {
     border-color: black;
 }
 
@@ -225,6 +225,7 @@ button {
     justify-items: center;
     padding-top: 1rem;
     color: #0065FC;
+    border-color: black;
 }
 
 .p_info {
@@ -564,7 +565,7 @@ aside {
     }
     .footer {
         display: block;
-    }
+    } 
 } 
 @media (max-width: 970px) {
     .hebergements_grid {
@@ -640,12 +641,11 @@ aside {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-left: 2rem;
     }
 }
 /* smartphone */ 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     aside {
         background: #F2F2F2;
         border-radius: 0px;
@@ -674,67 +674,27 @@ aside {
     header {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        height: 5rem; 
+        grid-template-rows: 1fr;
     }
-    
-    #logo {
-        display: grid;
+    .sinscrire {
         grid-template-columns: 1fr;
-        height: auto;
-        width: 70%;
     }
-    
-    .img_logo {
-        height: 40px;
-        width: 80px;
-    }
-    
-    .nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
     .link {
-        display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         height: 100%;
     }
-    
-    .link1, .link2 {
-        color: black;
-        margin-right: 5rem;
-        align-items: center;
+    .link1, .link2  {
+        padding: 0 2rem;
     }
-    
-    .link1 {
-        display: flex;
-    }
-    
-    .link2 {
-        display: flex;
-    }
-    
     .link1:hover {
-        border-top: 3px solid #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
-    
     .link2:hover {
-        border-top: 3px solid #0065FC;
-        color: #0065FC;
-    }
-    
-    .sinscrire {
-        display: grid;
-        grid-template-columns: 1fr;
-        color: black;
-        margin-right: 2rem;
-    }
-    
-    a {
-        text-decoration: none;
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        color: gray;
     }
 }
