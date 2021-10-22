@@ -4,18 +4,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    margin: 0px;
+}   
+
 header, .section_recherche, .hebergements, aside, .activites {
     margin: 0 2rem 0 2rem;
-}
+} 
 
 html {
     font-size: 100%;
     max-width: 1450px;
     margin: auto; 
-}
-
-body {
-    margin: 0px;
 }
 
 /* header */ 
@@ -220,6 +220,7 @@ input.recherche::placeholder {
     text-align: center;
     background-color: #DEEBFF;
 }
+
 button {
     display: flex;
     justify-content: flex-end;
@@ -303,7 +304,6 @@ button {
 .cards_hebergements >  div {
     padding: 3px;
 }
-
 
 .img_hebergements {
     border-top-left-radius: 20px;
@@ -423,8 +423,6 @@ aside {
 /* section activités */
 
 #activites {
-    display: flex;
-    flex-direction: column;
     margin: 0 2rem 2rem 2rem;
     margin-bottom: 2rem;
 }
@@ -493,16 +491,17 @@ aside {
     border-radius: 20px; 
 }
 
-.cards_iles > a{
+.cards_iles > a {
     height: 100px;
 }
 
-.cards_notredame > a{
+.cards_notredame > a {
     height: 100px;
 }
 
 .notredame_longchamp {
     display: grid;
+    grid-template-rows: 1fr 2fr;
     gap: 2rem;
 }
 
@@ -604,7 +603,7 @@ aside {
     .logo {
         order: 1;
     }
-    .link {
+    .link { 
         grid-column: 1 / 4;
         order: 3;
         display: flex;
@@ -738,11 +737,9 @@ aside {
     }
     .link {
         grid-column: 1 / 4;
-        order: 3;
-        display: flex;
-        justify-content: right;
+        justify-content: space-between;
         height: 100%;
-        margin-right: 0px;
+        margin: 0px;
         margin-top: 1rem;
     }
     .link1 {
@@ -806,3 +803,4 @@ aside {
         font-size: 14px;
     }
 }
+
