@@ -8,9 +8,9 @@ body {
     margin: 0px;
 }   
 
-header, .section_recherche, .hebergements, aside, .activites {
+.section_recherche, .hebergements, aside, .activites {
     margin: 0 2rem 0 2rem;
-} 
+}  
 
 html {
     font-size: 100%;
@@ -24,8 +24,10 @@ header {
     display: grid;
     grid-template-columns: 75% 12.5% 12.5%;
     height: 5rem; 
-    width: 100%;
+    width: 85%;
     align-items: center;
+    margin-left: 2rem;
+    gap: 3rem;
 }
 
 #logo {
@@ -41,15 +43,14 @@ header {
 .link {
     display: flex;
     justify-content: space-around;
-    height: 100%;
-    margin-right: 8rem;
+    height: auto;
     order: 2;
 }
 
 .link1, .link2 {
     color: black;
-    margin-right: 5rem;
     align-items: center;
+    padding: 2rem;
 }
 
 .link1 {
@@ -57,7 +58,7 @@ header {
 }
 
 .link2 {
-    display: flex;   
+    display: flex;  
 }
 
 .link1:hover {
@@ -72,16 +73,17 @@ header {
 }
 .inscription {
     display: flex;
-    height: 100%;
+    height: auto;
     order: 3;
 }
 
 .sinscrire {
     display: flex;
     color: #0065FC;
-    align-items: center;
-    margin-right: 2rem;
+    align-items: right;
     font-weight: 700;
+    padding-right: 2rem;
+    padding-left: 3rem;
 }   
 
 a {
