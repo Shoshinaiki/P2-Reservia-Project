@@ -22,12 +22,9 @@ html {
 
 header {
     display: grid;
-    grid-template-columns: 75% 12.5% 12.5%;
-    height: 5rem; 
-    width: 85%;
+    grid-template-columns: 55% auto auto;
     align-items: center;
-    margin-left: 2rem;
-    gap: 3rem;
+    margin: 0 2rem 0 2rem;
 }
 
 #logo {
@@ -36,13 +33,13 @@ header {
 }
 
 .img_logo {
-    height: 40px;
     width: 80px;
+    height: 40px;
 }
 
 .link {
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
     height: auto;
     order: 2;
 }
@@ -74,6 +71,7 @@ header {
 .inscription {
     display: flex;
     height: auto;
+    justify-content: center;
     order: 3;
 }
 
@@ -82,8 +80,6 @@ header {
     color: #0065FC;
     align-items: right;
     font-weight: 700;
-    padding-right: 2rem;
-    padding-left: 3rem;
 }   
 
 a {
@@ -560,6 +556,44 @@ aside {
     #main {
         grid-template-columns: 1fr;
     }
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 5rem; 
+        margin-top: 1rem;
+        align-items: center;
+        }
+        .logo {
+            order: 1;
+        }
+        .link { 
+            grid-column: 1 / 4;
+            order: 3;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .link1 {
+            flex: 50%;
+            margin-right: 0px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .link2 {
+            flex: 50%;
+            margin-right: 0px;
+            width: 100%;
+            justify-content: center;
+        }
+        .inscription {
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .sinscrire {
+            margin-left: 0.5rem;
+        }
     #hebergements {
         background: #F2F2F2;
         border-radius: 20px;
@@ -595,40 +629,7 @@ aside {
     } 
 } 
 @media (max-width: 970px) {
-    header {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    height: 5rem; 
-    align-items: center;
-    }
-    .logo {
-        order: 1;
-    }
-    .link { 
-        grid-column: 1 / 4;
-        order: 3;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .link1 {
-        flex: 50%;
-        margin-right: 0px;
-        width: 100%;
-        justify-content: center;
-    }
     
-    .link2 {
-        flex: 50%;
-        margin-right: 0px;
-        width: 100%;
-        justify-content: center;
-    }
-    .inscription {
-        order: 2;
-        display: flex;
-        justify-content: flex-end;
-    }
     .hebergements_grid {
         grid-template-columns: 1fr;
     }
@@ -704,11 +705,7 @@ aside {
         width: 100%;
     }
 }
-@media (max-width: 955px) {
-    .sinscrire {
-        padding-right: 2rem;
-    }
-}
+
 /* smartphone */ 
 
 @media (max-width: 550px) {
