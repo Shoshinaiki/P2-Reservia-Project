@@ -39,15 +39,14 @@ header {
 
 .link {
     display: flex;
-    gap: 2rem;
-    height: auto;
+    justify-content: space-around;
+    height: 100%;
     order: 2;
 }
 
 .link1, .link2 {
     color: black;
     align-items: center;
-    padding: 2rem;
 }
 
 .link1 {
@@ -65,9 +64,9 @@ header {
 
 .link2:hover {
     border-top: 3px solid #0065FC;
-    color: #0065FC;
-    
+    color: #0065FC; 
 }
+
 .inscription {
     display: flex;
     height: auto;
@@ -553,253 +552,287 @@ aside {
 /* tablette */
 
 @media (max-width: 1150px) {
-    #main {
-        grid-template-columns: 1fr;
-    }
-    header {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        height: 5rem; 
-        margin-top: 1rem;
-        align-items: center;
-        }
-        .logo {
-            order: 1;
-        }
-        .link { 
-            grid-column: 1 / 4;
-            order: 3;
-            display: flex;
-            justify-content: flex-start;
-        }
-        .link1 {
-            flex: 50%;
-            margin-right: 0px;
-            width: 100%;
-            justify-content: center;
-        }
+
+#main {
+    grid-template-columns: 1fr;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 5rem; 
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.logo {
+    order: 1;
+}
+
+.link { 
+    grid-column: 1 / 4;
+    order: 3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link1 {
+    flex: 50%;
+    padding: 2rem 0rem 1rem 0rem;
+    border-bottom: 3px solid #F2F2F2;
+    margin-right: 0px;
+    width: 100%;
+    justify-content: center;
+}
         
-        .link2 {
-            flex: 50%;
-            margin-right: 0px;
-            width: 100%;
-            justify-content: center;
-        }
-        .inscription {
-            order: 2;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .sinscrire {
-            margin-left: 0.5rem;
-        }
-    #hebergements {
-        background: #F2F2F2;
-        border-radius: 20px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    aside {
-        grid-area: 1;
-        background: #F2F2F2;
-        border-radius: 20px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    #activites {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .h2_activites {
-        margin-left: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-        font-size: 1.0rem;
-    }
-    .fort_iles {
-        display: grid;
-        gap: 2rem;
-    }
-    .footer {
-        display: block;
-    } 
-} 
-@media (max-width: 970px) {
+.link2 {
+    flex: 50%;
+    padding: 2rem 0rem 1rem 0rem;
+    border-bottom: 3px solid #F2F2F2;
+    margin-right: 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+.link1:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+}
+        
+.link2:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+}
+      
+.inscription {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+}
     
-    .hebergements_grid {
-        grid-template-columns: 1fr;
-    }
-    .activites_grid { 
-        grid-template-columns: 1fr;
-    }
-    #activites {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .h2_activites {
-        margin-left: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-        font-size: 1.0rem;
-    }
-    .img_vieuxport, .img_calanques {
-        display: grid;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        height: 8rem;
-        width: 100%;
-        object-fit: cover;
-    }
-    .fort_iles {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 2rem;
-    }
-    .cards_vieuxport, .cards_calanques {
-        height: 10.5rem;
-        width: 100%;
-        box-shadow: 0 0 1rem grey;
-        border-radius: 20px; 
-    }
-    .cards_iles, .cards_notredame {
-        display: grid;
-        grid-template-rows: 75% 25%;
-        height: 10.5rem;
-        width: 100%;
-        box-shadow: 0 0 1rem grey;
-        border-radius: 20px; 
-    }
-    .cards_fort, .cards_longchamp {
-        display: grid;
-        grid-template-rows: 75% 25%;
-        height: 10.5rem;
-        width: 100%;
-        box-shadow: 0 0 1rem grey;
-        border-radius: 20px; 
-    }
-    .img_fort, .img_longchamp {
-        display: grid;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        height: 8rem;
-        width: 100%;
-        object-fit: cover;
-    }
-    .img_iles, .img_notredame {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        height: 8rem;
-        width: 100%;
-        object-fit: cover;
-    }
-    .A_propos, .Nos_hébergements, .Assistance {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+.sinscrire {
+    padding-right: 1rem;
+}
+    
+.section_recherche {
+    margin: 2rem 2rem 0rem 2rem;
+}
+    
+#hebergements {
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+aside {
+    grid-area: 1;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#activites {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.h2_activites {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.0rem;
+}
+
+.fort_iles {
+    display: grid;
+    gap: 2rem;
+}
+
+.footer {
+    display: block;
+} 
+} 
+
+@media (max-width: 970px) {
+
+.hebergements_grid {
+     grid-template-columns: 1fr;
+}
+
+.activites_grid { 
+    grid-template-columns: 1fr;
+}
+
+#activites {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.h2_activites {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.0rem;
+}
+
+.img_vieuxport, .img_calanques {
+    display: grid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fort_iles {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+    
+.cards_vieuxport, .cards_calanques {
+    height: 10.5rem;
+    width: 100%;
+    box-shadow: 0 0 1rem grey;
+    border-radius: 20px; 
+}
+
+.cards_iles, .cards_notredame {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    height: 10.5rem;
+    width: 100%;
+    box-shadow: 0 0 1rem grey;
+    border-radius: 20px; 
+}
+
+.cards_fort, .cards_longchamp {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    height: 10.5rem;
+    width: 100%;
+    box-shadow: 0 0 1rem grey;
+    border-radius: 20px; 
+}
+
+.img_fort, .img_longchamp {
+    display: grid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img_iles, .img_notredame {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.A_propos, .Nos_hébergements, .Assistance {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 }
 
 /* smartphone */ 
 
 @media (max-width: 550px) {
-    aside {
-        background: #F2F2F2;
-        border-radius: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    } 
-    #hebergements {
-        background: white;
-        border-radius: 20px;
-    }
-    .hebergements_grid {
-        grid-template-columns: 1fr;
-        padding: 0px;    
-    }
-    .activites_grid { 
-        grid-template-columns: 1fr;
-    }
-    .fort_iles {
-        display: grid;
-        gap: 2rem;
-    }
-    .button_economic, .button_family, .button_romantic, .button_animals {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .link {
-        grid-column: 1 / 4;
-        justify-content: space-between;
-        height: 100%;
-        margin: 0px;
-        margin-top: 1rem;
-    }
-    .link1 {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-        color: #0065FC;
-    }
-    .link1:hover {
-        border-top: none; 
-    }
-    .link2 {
-        border-top: none;
-        border-bottom: 3px solid #F2F2F2;
-        color: black;
-    }
-    .link2:hover {
-        border-top: none;  
-    }
-    h1 {
-        display: flex;
-        font-size: 1.2rem;
-        padding-top: 2rem;
-    }
-    form > .fa-map-marker-alt {
-        object-position: none;
-    }
-    form > .fa-search {
-        object-position: left;
-    }
-    .div_fa-search {
-        display: flex;
-        background-color: #0065FC;
-        color: white;
-        width: 40px;
-        border: 2px  solid #0065FC;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-    .fa-search {
-        color: white;
-        height: 15px; 
-        padding: 5px;
-        margin-top: 10px;
-        margin-left: 5px;
-    } 
-    .recherche {
-        display: none;
-        background-color: #0065FC;
-        color: white;
-        height: 100%;
-        width: 105px;
-        padding-left: 10px;
-        border: 2px  solid #0065FC;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-    input.recherche::placeholder { 
-        color: white;
-        height: 15px;
-        font-weight: 600;
-        font-size: 14px;
-    }
+
+aside {
+    background: #F2F2F2;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+} 
+
+#hebergements {
+    background: white;
+    border-radius: 20px;
+}
+   
+.hebergements_grid {
+    grid-template-columns: 1fr;
+    padding: 0px;    
+}
+
+.activites_grid { 
+    grid-template-columns: 1fr;
+}
+
+.fort_iles {
+    display: grid;
+    gap: 2rem;
+}
+
+.button_economic, .button_family, .button_romantic, .button_animals {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+form > .fa-map-marker-alt {
+    object-position: none;
+}
+
+form > .fa-search {
+    object-position: left;
+}
+   
+.div_fa-search {
+    display: flex;
+    background-color: #0065FC;
+    color: white;
+    width: 40px;
+    border: 2px  solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.fa-search {
+    color: white;
+    height: 15px; 
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.recherche {
+    display: none;
+    background-color: #0065FC;
+    color: white;
+    height: 100%;
+    width: 105px;
+    padding-left: 10px;
+    border: 2px  solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input.recherche::placeholder { 
+    color: white;
+    height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
 }
 
