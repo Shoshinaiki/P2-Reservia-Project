@@ -24,10 +24,11 @@ header {
     display: grid;
     grid-template-columns: 55% auto auto;
     align-items: center;
-    margin: 0 2rem 0 2rem;
+    margin: 0rem 2rem 0 2rem; 
 }
 
 #logo {
+    margin: 1rem;
     height: auto;
     order: 1;
 }
@@ -40,34 +41,25 @@ header {
 .link {
     display: flex;
     justify-content: space-around;
+    margin: 1rem;
     height: 100%;
     order: 2;
 }
 
 .link1, .link2 {
+    display: flex;
     color: black;
     align-items: center;
 }
 
-.link1 {
-    display: flex;
-}
-
-.link2 {
-    display: flex;  
-}
-
-.link1:hover {
+.link1:hover, .link2:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
-}
-
-.link2:hover {
-    border-top: 3px solid #0065FC;
-    color: #0065FC; 
+    margin-top: 0px;
 }
 
 .inscription {
+    margin: 1rem;
     display: flex;
     height: auto;
     justify-content: center;
@@ -385,22 +377,16 @@ aside {
 
 .h3_populaires {
     font-size: 0.8rem;
-    padding-left: 15px;
-    padding-top: 10px;
-}
-
-.h3_populaires_le_soleil, .h3_populaires_au_coeur_de_l_eau, .h3_populaires_tout_bleu_et_blanc {
-    font-size: 0.8rem;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    margin-top: 0px;
+    padding-top: 1rem;
+    padding-bottom: 5px;
+    margin-right: 2rem;
 }
 
 .h3_populaires, .p_populaires {
     font-size: 0.8rem;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 
 .img_populaires {
@@ -413,8 +399,8 @@ aside {
 } 
 
 .stars_populaires {
-    padding-top: 1rem;
-    padding-left: 15px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* section activités */
@@ -551,7 +537,7 @@ aside {
 
 /* tablette */
 
-@media (max-width: 1150px) {
+@media (max-width: 1205px) {
 
 #main {
     grid-template-columns: 1fr;
