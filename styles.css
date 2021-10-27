@@ -190,7 +190,7 @@ input.recherche::placeholder {
 
 .economic, .family, .romantic, .animals {
     display: flex;
-    height: 100%;
+    height: 2.5rem;
     width: auto;
     color: black;
     background-color: white;
@@ -764,6 +764,14 @@ nav  {
 .link {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.filtres {
+    flex-direction: column;
+}
+
+.h2_filtres {
+    justify-content: flex-start;
 }
 
 aside {
