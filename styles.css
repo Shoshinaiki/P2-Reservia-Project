@@ -445,21 +445,12 @@ aside {
     object-fit: cover;
 }
 
-.img_fort, .img_longchamp {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 17rem;
-    width: 100%;
-    object-fit: cover;
-}
-
 .fort_iles {
     display: grid;
     grid-template-rows: 2fr 1fr;
     gap: 2rem;
-}
-
-.cards_fort, .cards_longchamp {
+} 
+.cards_fort {
     display: grid;
     grid-template-rows: 87% 13%;
     height: 315px;
@@ -467,12 +458,19 @@ aside {
     box-shadow: 0 0 1rem grey;
     border-radius: 20px; 
 }
-
 .cards_fort > a { 
     height: 15rem;
+} 
+
+.img_fort {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
 }
 
-.cards_iles, .cards_notredame {
+.cards_iles {
     display: grid;
     grid-template-rows: 72% 28%;
     height: 158px;
@@ -485,17 +483,7 @@ aside {
     height: 100px;
 }
 
-.cards_notredame > a {
-    height: 100px;
-}
-
-.notredame_longchamp {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    gap: 2rem;
-}
-
-.img_iles, .img_notredame {
+.img_iles {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 7.2rem;
@@ -503,7 +491,61 @@ aside {
     object-fit: cover;
 }
 
+.notredame_longchamp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.cards_notredame {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 235px;
+    width: 100%;
+    box-shadow: 0 0 1rem grey;
+    border-radius: 20px; 
+}
+
+.cards_notredame > a {
+    height: 70px;
+}
+
+.img_notredame {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards_longchamp {
+    display: grid;
+    height: 235px;
+    width: 100%;
+    box-shadow: 0 0 1rem grey;
+    border-radius: 20px; 
+}
+
+.cards_longchamp > a {
+    height: 70px;
+}
+
+.img_longchamp {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 .h3_activites {
+    padding-left: 20px;
+    font-size: 0.8rem;
+}
+
+.h3_notredame, .h3_longchamp {
+    padding-top: 7.5rem;
     padding-left: 20px;
     font-size: 0.8rem;
 }
@@ -774,7 +816,12 @@ nav  {
     justify-content: flex-start;
 }
 
-aside {
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+aside { 
     background: #F2F2F2;
     border-radius: 0px;
     margin-left: 0px;
