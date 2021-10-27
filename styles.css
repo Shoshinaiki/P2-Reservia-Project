@@ -121,7 +121,7 @@ form {
 input.lieu::placeholder { 
     color: black;
     height: 1rem;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 14px;
 }
 
@@ -178,6 +178,7 @@ input.recherche::placeholder {
 .h2_filtres {
     display: flex;
     justify-content: center;
+    font-weight: 800;
     font-size: 0.8rem;
     margin-top: 1rem;
     margin-right: 2rem;
@@ -194,7 +195,7 @@ input.recherche::placeholder {
     width: auto;
     color: black;
     background-color: white;
-    font-weight: 700;
+    font-weight: 800;
     border: 2px solid #F2F2F2;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -227,6 +228,7 @@ button {
     padding-right: 0.5rem;
     font-weight: 700;
     border: none;
+    border-top-right-radius: 20px;
     font-size: 0.8rem;
 }
 
@@ -721,6 +723,12 @@ aside {
     font-size: 1.0rem;
 }
 
+.h3_notredame, .h3_longchamp {
+    padding-top: 0.1rem;
+    padding-left: 20px;
+    font-size: 0.8rem;
+}
+
 .img_vieuxport, .img_calanques {
     display: grid;
     border-top-left-radius: 20px;
@@ -814,6 +822,8 @@ nav  {
 
 .h2_filtres {
     justify-content: flex-start;
+    margin-top: 0rem;
+    margin-left: 0.5rem;
 }
 
 .animals {
